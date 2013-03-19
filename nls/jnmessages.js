@@ -52,6 +52,11 @@
 	jnProfileProgressStatus: "This profile could be improved by adding some status updates.",
 	jnProfileProgressAboutMe: "This profile could be improved by adding some information in about me.",
 	jnProfileProgressExperience: "This profile could be improved by adding some experience.",
+	jnProfileProgressCommunities: "This profile could be improved by joining some communities",
+	jnProfileProgressIPNumber: "This profile could be improved by adding an IP Number",
+	jnProfileProgressMobileNumber: "This profile could be improved by adding a mobile number",
+	jnProfileProgressOfficeNumber: "This profile could be improved by adding an office number",
+	jnProfileProgressJobTitle: "This profile could be improved by adding a job title",
 
 	// Update Manager Messages
 	jnUpdateManagerTopDownNoManager: "You do not currently manage ${0}.",
