@@ -35,4 +35,18 @@ Modify the templateNlsBundles to include the jnmessages bundle as shown below:
 
 Javascript i18n files
 ==
-This project includes the i18n Dojo JSON files that are using by the JustNudge commercial and open source widgets.  These sources will by default download from github when the widgets are installed or can be copied and used locally.  For further details on this see the appropriate widget documentation.
+This project includes the i18n Dojo JSON files that are using by the JustNudge commercial and open source widgets.  These sources will by default download from github when the widgets are installed or can be copied and used locally.
+
+The files can be either be used directory from GitHub (which is the default configuration for the widgets that use this configuration) or you can host the files locally.  The advantage of hosting the files locally is primarily one of performance.  To use the files locally modify the widget-config.xml for the widget and change the definition of your widget as shown below:
+
+    <widgetDef defId="jnUpdateManager" 
+    		   bundleRefId="jnmessages"
+    		   url="/jnWidgets/UpdateManager/UpdateManager.xml" 
+    		   modes="view">
+    	<itemSet>
+       		<item name="messageURI" value="/jnmessages"/>
+       	</itemSet>
+    </widgetDef>
+
+The messageURI item should point to the URL of the messages.  In the example above the URI is on the same host as IBM Connections but the URL can point to any resolvable host.  If you use a different host you also need to configure the HTTP Proxy for the messages host.
+
